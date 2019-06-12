@@ -18,3 +18,7 @@
 // ];
 
 // function membersOnActiveMeetups(meetups) {}
+
+// eslint-disable-next-line import/prefer-default-export
+export const membersOnActiveMeetups = meetups =>
+  meetups.reduce((acc, { isActive, members }) => (isActive ? members + acc : acc), 0);

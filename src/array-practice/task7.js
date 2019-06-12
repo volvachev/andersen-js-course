@@ -11,3 +11,6 @@
  * console.log(take([1, 2, 3], 5)); -> [1, 2, 3]
  * console.log(take([1, 2, 3], 2)); -> [1, 2]
  */
+
+// eslint-disable-next-line import/prefer-default-export
+export const take = (arr, n = 1) => arr.slice(0, n);

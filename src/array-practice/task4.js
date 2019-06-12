@@ -7,3 +7,6 @@
  * console.log(union([5, 1, 2, 3, 3], [4, 3, 2])); -> [5, 1, 2, 3, 4]
  * console.log(union([5, 1, 3, 3, 4], [1, 3, 4])); -> [5, 1, 3, 4]
  */
+
+// eslint-disable-next-line import/prefer-default-export
+export const union = (a, b) => Array.from(new Set([...a, ...b]));

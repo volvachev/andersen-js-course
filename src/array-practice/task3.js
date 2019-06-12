@@ -9,3 +9,10 @@
  *
  * forEachRight([1, 2, 3, 4], val => console.log(val)); -> в консоль 4 3 2 1
  */
+
+// eslint-disable-next-line import/prefer-default-export
+export const forEachRight = (array, cb) =>
+  array
+    .slice()
+    .reverse()
+    .forEach(cb);
